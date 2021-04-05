@@ -14,15 +14,8 @@ let metronomeCount = 0;
 // This function is called every 600ms
 function update() {
 
-    // Play the 'tick' sound
-    tick.play();
-
     // 1A-3 will add one to metronomeCount everytime update function runs
     metronomeCount++;
-
-    if (metronomeCount % 4 === 0) {
-        tock.play();
-    }
 
     // 1B-2 & 1B-3
     // Query the metronome html
@@ -32,6 +25,7 @@ function update() {
 
     // 2B query the metronome checkbox to see if it is checked
     const metronomeCheck = document.querySelector("#metronome-checkbox");
+
 
     // 2C query each instruments checkbox to see if it is checked
     const kickDrumChecked = document.querySelector("#kick-drum");
@@ -44,7 +38,6 @@ function update() {
         tick.play();
 
         // 1A-3 will add one to metronomeCount everytime update function runs
-        metronomeCount++;
 
         if (metronomeCount % 4 === 0) {
             tock.play();
