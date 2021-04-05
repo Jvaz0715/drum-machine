@@ -18,6 +18,12 @@ function update() {
     if (metronomeCount % 4 === 0) {
         tock.play();
     }
+
+    // 1B-2 & 1B-3
+    // Query the metronome html
+    const metronomeDisplay = document.querySelector(".metronome-count");
+
+    metronomeDisplay.innerText = metronomeCount;
 }
 
 // This function sets up update() to be called every 600ms
