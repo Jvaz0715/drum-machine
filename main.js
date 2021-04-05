@@ -1,5 +1,7 @@
 // Setup 'tick' sound
 const tick = new Audio('sounds/tick.mp3');
+// Setup 'tock' sound
+const tock = new Audio('sounds/tock.mp3')
 
 // This function is called every 600ms
 function update() {
