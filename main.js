@@ -24,6 +24,24 @@ function update() {
     const metronomeDisplay = document.querySelector(".metronome-count");
 
     metronomeDisplay.innerText = metronomeCount;
+
+    // 2B query the metronome checkbox to see if it is checked
+    const metronomeCheck = document.querySelector("#metronome-checkbox");
+
+    // 2B see if metronome checkbox is checked
+    if (metronomeCheck.checked) {
+         // Play the 'tick' sound
+        tick.play();
+
+        // 1A-3 will add one to metronomeCount everytime update function runs
+        metronomeCount++;
+
+        if (metronomeCount % 4 === 0) {
+            tock.play();
+        }
+    } else {
+        
+    }
 }
 
 // This function sets up update() to be called every 600ms
