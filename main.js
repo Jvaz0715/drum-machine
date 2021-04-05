@@ -60,6 +60,8 @@ function update() {
         const hiHatTiming = document.querySelector("#hi-hat-timing");
         const timingToNumber = Number(hiHatTiming.value);
         if(timingToNumber === beatCount) {
+            // Reset the hihat sound
+            hihat.load();
             hiHat.play();
         }    
     }
