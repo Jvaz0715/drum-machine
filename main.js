@@ -11,6 +11,13 @@ function update() {
 
     // Play the 'tick' sound
     tick.play();
+
+    // 1A-3 will add one to metronomeCount everytime update function runs
+    metronomeCount++;
+
+    if (metronomeCount % 4 === 0) {
+        tock.play();
+    }
 }
 
 // This function sets up update() to be called every 600ms
