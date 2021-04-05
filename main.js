@@ -1,7 +1,10 @@
 // Setup 'tick' sound
 const tick = new Audio('sounds/tick.mp3');
-// Setup 'tock' sound
-const tock = new Audio('sounds/tock.mp3')
+// 1A-1 Setup 'tock' sound
+const tock = new Audio('sounds/tock.mp3');
+
+//1A-2 create global variable to keep count;
+let metronomeCount = 0;
 
 // This function is called every 600ms
 function update() {
