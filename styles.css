@@ -70,3 +70,11 @@ body {
     transform-origin: bottom center;
     animation: tick 1200ms ease-in-out infinite;
 }
+
+.metronome-count {
+    border: 3px solid white;
+    height: 50px;
+    width: 100px;
+    background-color: #e07a5f;
+    color: white;
+}
