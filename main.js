@@ -17,6 +17,9 @@ function update() {
     // 1A-3 will add one to metronomeCount everytime update function runs
     metronomeCount++;
 
+    //added to help with beats, declare beat count that will give if a beat is on 1, 2, 3, or 4
+    const beatCount = (metronomeCount % 4) + 1;
+
     // 1B-2 & 1B-3
     // Query the metronome html
     const metronomeDisplay = document.querySelector(".metronome-count");
@@ -46,15 +49,27 @@ function update() {
 
     // 2C see if each other instrument is checked
     if (kickDrumChecked.checked) {
-        kickDrum.play();
+        const kickDrumTiming = document.querySelector("#kick-drum-timing");
+        const timingToNumber = Number(kickDrumTiming.value);
+        if(timingToNumber === beatCount) {
+            kickDrum.play();
+        }
     }
 
     if (hiHatChecked.checked) {
-        hiHat.play();
+        const hiHatTiming = document.querySelector("#hi-hat-timing");
+        const timingToNumber = Number(hiHatTiming.value);
+        if(timingToNumber === beatCount) {
+            hiHat.play();
+        }    
     }
 
     if (snareDrumChecked.checked) {
-        snareDrum.play();
+        const snareDrumTiming = document.querySelector("#snare-drum-timing");
+        const timingToNumber = Number(snareDrumTiming.value);
+        if(timingToNumber === beatCount) {
+            snareDrum.play();
+        } 
     }
 }
 

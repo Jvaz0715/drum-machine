@@ -99,3 +99,10 @@ body {
     font-weight: bold;
     color: white;
 }
+
+.checkbox-container {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    margin: 5px;
+}

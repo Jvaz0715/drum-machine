@@ -18,27 +18,30 @@
     <div class="checkbuttons-container">
 
         <!--div container for metronome-->
-        <div>
+        <div class="checkbox-container">
             <input type="checkbox" id="metronome-checkbox" value="metronome-checkbox" checked >
             <label for="metronome-checkbox" class="checkbox-labels">Metronome</label>
         </div>
 
         <!--div container for kick drum-->
-        <div>
+        <div class="checkbox-container">
             <input type="checkbox" id="kick-drum" value="kick-drum" >
             <label for="kick-drum" class="checkbox-labels">Kick Drum</label>
+            <input type ="number" id="kick-drum-timing" min="1" max ="4">
         </div>
 
         <!--div container for hi hat-->
-        <div>
+        <div class="checkbox-container">
             <input type="checkbox" id="hi-hat" value="hi-hat" >
             <label for="kick-drum" class="checkbox-labels">Hi Hat</label>
+            <input type ="number" id="hi-hat-timing" min="1" max ="4">
         </div>
 
         <!--div container for snare-drum-->
-        <div>
+        <div class="checkbox-container">
             <input type="checkbox" id="snare-drum" value="snare-drum" >
             <label for="snare-drum" class="checkbox-labels">Snare Drum</label>
+            <input type ="number" id="snare-drum-timing" min="1" max ="4">
         </div>
 
     </div>
