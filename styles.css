@@ -77,4 +77,8 @@ body {
     width: 100px;
     background-color: #e07a5f;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
 }
