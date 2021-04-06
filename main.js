@@ -75,6 +75,10 @@ function update() {
     }
 }
 
+
+
+//query speed input
+
 // This function sets up update() to be called speed input
 function setupUpdate() {
     setInterval(update, 600);
@@ -83,15 +87,8 @@ function setupUpdate() {
 // Call setupUpdate() once after 300ms
 setTimeout(setupUpdate, 300);
 
-//query the speed buttons
-//slowdown button query
-const slowerButton = document.querySelector(".slowdown-button");
 
-//slowerButton.addEventListener('click', function(){
-   // setTimeout(setupUpdate(1200), 300);
-//})
 
-//test button
-//slowerButton.addEventListener('click', function () {}
-//regular speed query
-//speedup query
+
+const speedButton = document.querySelector(".speed-button");
+
