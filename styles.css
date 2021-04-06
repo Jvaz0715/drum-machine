@@ -103,6 +103,63 @@ body {
 .checkbox-container {
     display: flex;
     justify-content: space-around;
-    border: 1px solid white;
     margin: 5px;
+}
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) { 
+    .metronome {
+        width: 150px;
+        height: 200px;
+    }
+    
+    .background-left {
+        border-bottom: 100px solid #e07a5f;
+        border-left: 25px solid transparent;
+    }
+    
+    .background-center {
+        flex: 1;
+        background-color: #f2cc8f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .background-right {
+        border-bottom: 100px solid #e07a5f;
+        border-right: 25px solid transparent;
+    }
+    
+    .core {
+        flex: 1;
+        width: 30%;
+        background-color: #f4f1de;
+        margin: 24px 0;
+        border: 3px dashed #e07a5f;
+    }
+    
+    .arm {
+        height: 150px;
+        width: 10px;
+        bottom: 10px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        left: 67px;
+    }
+
+    .metronome-count {
+        border: 1px solid white;
+        height: 25px;
+        width: 50px;
+        background-color: #e07a5f;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    } 
 }
