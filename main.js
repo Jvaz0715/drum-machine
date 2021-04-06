@@ -61,7 +61,7 @@ function update() {
         const timingToNumber = Number(hiHatTiming.value);
         if(timingToNumber === beatCount) {
             // Reset the hihat sound
-            hihat.load();
+            hiHat.load();
             hiHat.play();
         }    
     }
